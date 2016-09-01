@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/dodgerblue"
+    tools:context="com.luisaamariles.punto4.MainActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textlog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loggin:"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="40"
+                android:id="@+id/eLoggin"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textpas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password:"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="40"
+                android:id="@+id/ePassword"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textrpas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm password:"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="40"
+                android:id="@+id/eRPassword"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="20sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLength="40"
+                android:id="@+id/eEmail"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/textsexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo:"
+                android:textSize="20sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton android:id="@+id/eFemenino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/eMasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/darkturquoise"
+                android:onClick="setDate"
+                android:text="Fecha de nacimiento" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Año"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/dodgerblue"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:id="@+id/textciudad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciudad de nacimiento:"
+                android:textSize="20sp" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Lugar"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/dodgerblue"
+                android:orientation="horizontal"
+                />
+            <TextView
+                android:id="@+id/texthobbie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hobbies:"
+                android:textSize="20sp" />
+
+            <CheckBox android:id="@+id/bailar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bailar"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/cantar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantar"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/deporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hacer ejercicio"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/instrumento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tocar un instrumento"
+                android:onClick="onCheckboxClicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/darkturquoise"
+                android:hint="Aceptar"
+                android:id="@+id/bAceptar"/>
+
+            <TextView
+                android:id="@+id/textres"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Datos ingresados:"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

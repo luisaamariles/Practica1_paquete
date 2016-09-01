@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/thistle"
+    android:orientation="vertical"
+    tools:context="com.luisaamariles.punto2.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese dos números:"
+        android:textSize="30sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="8"
+        android:hint="Dato1:"
+        android:id="@+id/eDato1"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="8"
+        android:singleLine="true"
+        android:hint="Dato2:"
+        android:id="@+id/eDato2"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/thistle"
+        android:orientation="horizontal"
+        />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/eSumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sumar"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/eRestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restar"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/eMult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplicar"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/eDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dividir"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/thistle"
+        android:orientation="horizontal"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Calcular"
+        android:id="@+id/bCalcular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/thistle"
+        android:orientation="horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Resultado: "
+        android:id="@+id/textResultado"
+        android:background="@color/plum"/>
+
+</LinearLayout>
+
